@@ -22,7 +22,7 @@ def proof_of_work(last_proof):
     start = timer()
 
     print("Searching for next proof")
-    proof = 0
+    proof = random.randint(0, 100000)
     #  TODO: Your code here
     while valid_proof(last_proof, proof) is False:
         proof += 1
